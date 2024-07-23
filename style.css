@@ -1,0 +1,612 @@
+@charset "UTF-8";
+body {
+  font-family: "Zen Old Mincho";
+  background-color: #ffcab0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.8;
+  z-index: 99;
+}
+.header .navigation-left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  align-items: center;
+}
+.header .navigation-left img {
+  width: 25%;
+  padding-left: 2%;
+}
+.header .navigation-left img:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.3);
+  z-index: 2;
+}
+.header .navigation-left h1 {
+  padding-top: 5%;
+  font-size: xx-large;
+  color: #ffcab0;
+}
+.header .navigation-left h1:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.3);
+  z-index: 2;
+}
+.header .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .navigation a {
+  display: block;
+  font-size: 20px;
+  color: #ffcab0;
+  text-decoration: none;
+  transition: 0.3s;
+  margin: 0 0 0 30px;
+}
+.header .navigation a:hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
+.header .navigation button {
+  width: 100px;
+  display: block;
+  font-size: 25px;
+  color: black;
+  background-color: #ffcab0;
+  border: 1px solid;
+  border-color: #ffcab0;
+  border-radius: 4px;
+  margin: 0 40px 0 25px;
+  transition: 0.3s;
+  cursor: pointer;
+  font-weight: bold;
+}
+.header .navigation button:hover {
+  transform: scale(1.4);
+  z-index: 2;
+  transform: rotate(720deg);
+}
+
+.fa-cat {
+  font-size: 15px;
+}
+
+.fa-paw {
+  font-size: 30px;
+  color: #f6d365;
+}
+
+.fa-caret-right {
+  font-size: 30px;
+}
+
+.h1_and_searchArea {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 250px;
+}
+.h1_and_searchArea img {
+  position: relative;
+  opacity: 0.3;
+}
+.h1_and_searchArea h1 {
+  position: absolute;
+  font-size: 50px;
+}
+.h1_and_searchArea .searchArea {
+  position: absolute;
+  margin-top: 140px;
+  margin-left: -10px;
+  width: 543px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 40px;
+  background-color: black;
+  opacity: 0.5;
+}
+.h1_and_searchArea .searchArea .searchInput {
+  border: none;
+  background: transparent;
+  margin-right: 254px;
+  outline: none;
+}
+.h1_and_searchArea .searchArea .material-symbols-outlined {
+  color: white;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.introduction0 {
+  font-family: "Zen Old Mincho";
+  margin-top: 7.8%;
+  margin-left: 20%;
+  width: 80%;
+  height: 100dvh;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+}
+.introduction0 .textArea {
+  width: 50%;
+  height: 80%;
+  left: 5%;
+  background: black;
+  padding-left: 5%;
+  border-top-right-radius: 10px;
+  color: white;
+}
+.introduction0 .textArea #row1 {
+  font-weight: bold;
+  font-family: poppin;
+  background: -webkit-linear-gradient(#ec8569 0%, #f9d423 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.introduction0 .textArea #row3 {
+  font-size: 120px;
+  bottom: 100px;
+  padding-bottom: 60px;
+}
+.introduction0 .textArea #row4 {
+  background: -webkit-linear-gradient(#f97b6d 0%, #fe5196 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+.introduction0 .textArea h1 {
+  margin-left: 5%;
+  font-size: 48px;
+}
+.introduction0 .textArea p {
+  margin: 5% 0;
+  font-size: 24px;
+  color: rgb(176, 176, 176);
+}
+.introduction0 img {
+  width: 40%;
+  height: 80%;
+}
+
+.introduction1 {
+  margin-left: 5%;
+  width: 80%;
+  height: auto;
+  background-color: #F1F8E8;
+  display: flex;
+  justify-content: center;
+}
+.introduction1 .text-area {
+  width: 45%;
+  height: auto;
+  padding: 0 5% 0 0;
+  border-radius: 20px;
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.introduction1 .text-area h1 {
+  color: black;
+  font-size: 55px;
+}
+.introduction1 .text-area h2 {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 5%;
+}
+.introduction1 .text-area p {
+  border: 3px solid #55AD9B;
+  font-size: 16px;
+}
+.introduction1 img {
+  border-radius: 20px;
+}
+
+.introduction2 {
+  margin-left: 15%;
+  width: 80%;
+  height: auto;
+  background-color: #F1F8E8;
+  display: flex;
+  justify-content: center;
+}
+.introduction2 .text-area {
+  font-family: "Zen Old Mincho", serif;
+  width: 40%;
+  height: auto;
+  padding: 5% 0 0 15%;
+  border-radius: 20px;
+  font-weight: 700;
+  writing-mode: vertical-lr;
+}
+.introduction2 .text-area h1 {
+  border: 10% 0 10% 0;
+  color: black;
+  font-size: 70px;
+}
+.introduction2 .text-area h2 {
+  color: black;
+  font-size: 35px;
+  font-weight: 500;
+  padding: 20% 20% 0 0;
+}
+.introduction2 .text-area p {
+  border: 3px solid #55AD9B;
+  font-size: 16px;
+}
+.introduction2 img {
+  border-radius: 20px;
+}
+
+.introduction4 {
+  font-family: "Zen Old Mincho";
+  margin-left: 5%;
+  width: 80%;
+  height: auto;
+  background-color: #F1F8E8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.introduction4 .text-area {
+  width: 45%;
+  height: auto;
+  padding: 0 5% 0 0;
+  border-radius: 20px;
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.introduction4 .text-area #row4-1 {
+  padding-bottom: 30px;
+  font-size: 60px;
+  font-weight: bold;
+}
+.introduction4 .text-area #row4-2 {
+  background: #22c1c3; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fdbb2d, #22c1c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  padding-top: 5%;
+}
+.introduction4 .text-area #row4-3 {
+  font-size: 25px;
+  font-weight: bold;
+  bottom: 100px;
+  padding-bottom: 20px;
+}
+.introduction4 .text-area #row4-4 {
+  font-size: 15px;
+  padding: 0 50px 0 50px;
+  font-weight: bold;
+  border: 3px solid #22c1c3;
+}
+.introduction4 .text-area h1 {
+  color: black;
+  font-size: 55px;
+}
+.introduction4 .text-area h2 {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 5%;
+}
+.introduction4 .text-area p {
+  font-size: 16px;
+}
+.introduction4 img {
+  width: 45%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.introduction3 {
+  font-family: "Zen Old Mincho", serif;
+  width: 100%;
+  height: 120dvh;
+  background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.introduction3 .outerArea {
+  border: 5% 0 5% 0;
+  width: 450px;
+  background-color: #95D2B3;
+  border: 3px solid #505050;
+  box-shadow: #505050 0px 20px 30px -10px;
+}
+.introduction3 .outerArea:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 10px -20px 400px 50px white;
+  transform: rotateY(360deg);
+}
+.introduction3 .outerArea .innerArea1 {
+  width: 100%;
+  height: 40dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.introduction3 .outerArea .innerArea1 img {
+  width: 50%;
+  height: 100%;
+}
+.introduction3 .outerArea .innerArea2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #22c1c3; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fdbb2d, #22c1c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.introduction3 .outerArea .innerArea2 h1 {
+  flex-wrap: wrap;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.container {
+  width: 80%;
+  height: 100dvh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.container .slider {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: #505050;
+  border-radius: 20px;
+}
+.container .slider #slide0 {
+  background-image: url("./cat/展區介紹/衝阿貓破崙.jpg");
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: black;
+  top: 0%;
+}
+.container .slider #slide0:hover {
+  z-index: 2;
+}
+.container .slider #slide1 {
+  background-image: url("./cat/展區介紹/大宮女.jpg");
+  top: 10%;
+}
+.container .slider #slide1:hover {
+  transition: 0.3s;
+  z-index: 2;
+  transform: translate3d(-30px, -30px, 100px);
+}
+.container .slider #slide2 {
+  background-image: url("./cat/展區介紹/拾穗.jpg");
+  top: 20%;
+}
+.container .slider #slide2:hover {
+  transition: 0.3s;
+  z-index: 2;
+  transform: translate3d(-30px, -30px, 100px);
+}
+.container .slider #slide3 {
+  background-image: url("./cat/展區介紹/維納斯誕生.jpg");
+  top: 30%;
+}
+.container .slider #slide3:hover {
+  transition: 0.3s;
+  z-index: 2;
+  transform: translate3d(-30px, -30px, 100px);
+}
+.container .slider #slide4 {
+  background-image: url("./cat/展區介紹/衝阿貓破崙.jpg");
+  top: 40%;
+}
+.container .slider #slide4:hover {
+  transition: 0.3s;
+  z-index: 2;
+  transform: translate3d(-30px, -30px, 100px);
+}
+.container .slider #slide5 {
+  background-image: url("./cat/展區介紹/達利時光靜止.jpg");
+  top: 50%;
+}
+.container .slider #slide5:hover {
+  transition: 0.3s;
+  z-index: 2;
+  transform: translate3d(-30px, -30px, 100px);
+}
+.container .slider #slide6 {
+  background-image: url("./cat/展區介紹/雅典娜.jpg");
+  top: 60%;
+}
+.container .slider #slide6:hover {
+  transition: 0.3s;
+  z-index: 2;
+  transform: translate3d(-30px, -30px, 100px);
+}
+.container .slider .slides {
+  position: absolute;
+  width: 10%;
+  height: 40%;
+  top: 30%;
+  right: -11%;
+  border-radius: 15px;
+  border: 2px solid white;
+  background-color: aqua;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.introduction5 {
+  width: 70%;
+  height: 80dvh;
+  background-image: linear-gradient(60deg, #90c8f5 0%, #c2e59c 100%);
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  padding-top: 50px;
+  margin-left: 15%;
+}
+.introduction5 .text-area {
+  font-family: "Zen Old Mincho", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.introduction5 .text-area #row5-1 {
+  font-size: 70px;
+  font-weight: bold;
+  border-radius: 20px;
+  padding-bottom: 40px;
+}
+.introduction5 .text-area #row5-2 {
+  border-top: 80px;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #fdbb2d, #22c1c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.introduction5 .text-area #row5-3 {
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+.introduction5 .text-area #row5-4 {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 50px;
+  border-radius: 20px;
+}
+.introduction5 .text-area #row5-5 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #fdbb2d, #22c1c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.introduction5 .text-area #row5-6 {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  border-radius: 20px;
+}
+.introduction5 .img-area {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.introduction5 .img-area .img {
+  width: 50%;
+  height: 80%;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.footer {
+  width: 100%;
+  height: 20dvh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  background-color: black;
+  opacity: 0.8;
+}
+.footer .left {
+  width: 15%;
+  height: 100%;
+  color: white;
+  padding-top: 1%;
+}
+.footer .left p {
+  padding-left: 20px;
+  font-size: 1.5dvw;
+  font-weight: bold;
+}
+.footer .left .icons {
+  margin-top: 12%;
+  font-size: 1.5dvw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 99;
+}
+.footer .left .icons:hover {
+  cursor: pointer;
+}
+.footer .left #facebook:hover {
+  background-color: black;
+}
+.footer .right {
+  width: 20%;
+  height: 100%;
+  color: white;
+  padding-top: 1%;
+  border-left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .right .pages {
+  width: 30%;
+  height: 100%;
+  font-size: 10px;
+  font-weight: 600;
+  margin: 0 5%;
+  border-right: 100px;
+}/*# sourceMappingURL=style.css.map */
